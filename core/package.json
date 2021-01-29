@@ -1,0 +1,32 @@
+{
+  "name": "@diamondbot/core",
+  "version": "0.0.1",
+  "description": "Modular library to easily build discord bots",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "babel src -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alvarocastro/diamondbot.git"
+  },
+  "author": "Alvaro Castro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alvarocastro/diamondbot/issues"
+  },
+  "homepage": "https://github.com/alvarocastro/diamondbot#readme",
+  "dependencies": {
+    "discord.js": "^12.5.1",
+    "lowdb": "^1.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/preset-env": "^7.12.11"
+  }
+}
