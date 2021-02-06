@@ -1,7 +1,7 @@
 {
-  "name": "@diamondbot/core",
-  "version": "0.1.1",
-  "description": "Modular library to easily build discord bots",
+  "name": "@diamondbot/help-command",
+  "version": "1.0.0",
+  "description": "DiamondBot command that prints a helpful list of all bot commands",
   "main": "dist/index.js",
   "files": [
     "dist"
@@ -20,27 +20,24 @@
   },
   "keywords": [
     "diamondbot",
-    "framework",
-    "bot",
+    "diamondbot command",
     "discord",
-    "easy",
-    "simple",
-    "chatbot"
+    "command",
+    "help"
   ],
   "author": "Alvaro Castro",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/alvarocastro/diamondbot/issues"
   },
-  "homepage": "https://github.com/alvarocastro/diamondbot#readme",
-  "dependencies": {
-    "discord.js": "^12.5.1",
-    "lowdb": "^1.0.0"
-  },
+  "homepage": "https://github.com/alvarocastro/diamondbot/commands/help#readme",
   "devDependencies": {
-    "@babel/cli": "^7.12.10",
-    "@babel/core": "^7.12.10",
-    "@babel/plugin-proposal-class-properties": "^7.12.1",
-    "@babel/preset-env": "^7.12.11"
+    "@babel/cli": "^7.12.13",
+    "@babel/core": "^7.12.13",
+    "@babel/plugin-proposal-class-properties": "^7.12.13",
+    "@babel/preset-env": "^7.12.13"
+  },
+  "dependencies": {
+    "@diamondbot/core": "0.0.3"
   }
 }

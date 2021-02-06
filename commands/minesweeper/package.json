@@ -1,7 +1,7 @@
 {
-  "name": "@diamondbot/core",
-  "version": "0.1.1",
-  "description": "Modular library to easily build discord bots",
+  "name": "@diamondbot/minesweeper-command",
+  "version": "1.0.5",
+  "description": "DiamondBot command to play minesweeper in Discord!",
   "main": "dist/index.js",
   "files": [
     "dist"
@@ -20,22 +20,22 @@
   },
   "keywords": [
     "diamondbot",
-    "framework",
-    "bot",
+    "diamondbot command",
     "discord",
-    "easy",
-    "simple",
-    "chatbot"
+    "command",
+    "minesweeper",
+    "game",
+    "logic"
   ],
   "author": "Alvaro Castro",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/alvarocastro/diamondbot/issues"
   },
-  "homepage": "https://github.com/alvarocastro/diamondbot#readme",
+  "homepage": "https://github.com/alvarocastro/diamondbot/commands/minesweeper#readme",
   "dependencies": {
-    "discord.js": "^12.5.1",
-    "lowdb": "^1.0.0"
+    "@diamondbot/core": "0.0.2",
+    "discord.js-minesweeper": "^1.0.6"
   },
   "devDependencies": {
     "@babel/cli": "^7.12.10",

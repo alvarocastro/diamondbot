@@ -1,20 +1,19 @@
 import Bot from './bot';
-import { ChatCommand, AdminChatCommand, ChannelChatCommand } from './chat-command';
+import ChatCommand from './chat-command';
 import ChatEvent from './chat-event';
 import Memory from './memory';
+import Discord from 'discord.js';
 
 export default {
 	Bot,
 	ChatEvent,
 	ChatCommand,
-	AdminChatCommand,
-	ChannelChatCommand,
-	Memory
+	Memory,
+	Discord
 };
 
 export { Bot };
 export { ChatEvent };
 export { ChatCommand };
-export { AdminChatCommand };
-export { ChannelChatCommand };
 export { Memory };
+export { Discord };

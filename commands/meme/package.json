@@ -1,7 +1,7 @@
 {
-  "name": "@diamondbot/core",
-  "version": "0.1.1",
-  "description": "Modular library to easily build discord bots",
+  "name": "@diamondbot/meme-command",
+  "version": "1.0.1",
+  "description": "DiamondBot command that posts memes from reddit",
   "main": "dist/index.js",
   "files": [
     "dist"
@@ -20,27 +20,29 @@
   },
   "keywords": [
     "diamondbot",
-    "framework",
-    "bot",
+    "diamondbot command",
     "discord",
-    "easy",
-    "simple",
-    "chatbot"
+    "command",
+    "memes",
+    "meme",
+    "dankmeme",
+    "random"
   ],
   "author": "Alvaro Castro",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/alvarocastro/diamondbot/issues"
   },
-  "homepage": "https://github.com/alvarocastro/diamondbot#readme",
-  "dependencies": {
-    "discord.js": "^12.5.1",
-    "lowdb": "^1.0.0"
-  },
+  "homepage": "https://github.com/alvarocastro/diamondbot/commands/meme#readme",
   "devDependencies": {
     "@babel/cli": "^7.12.10",
     "@babel/core": "^7.12.10",
     "@babel/plugin-proposal-class-properties": "^7.12.1",
     "@babel/preset-env": "^7.12.11"
+  },
+  "dependencies": {
+    "@diamondbot/core": "0.0.2",
+    "random-item": "^3.1.0",
+    "random-puppy": "^1.1.0"
   }
 }

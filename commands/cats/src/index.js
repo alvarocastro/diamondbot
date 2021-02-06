@@ -3,15 +3,30 @@ import randomPuppy from 'random-puppy';
 import randomItem from 'random-item';
 
 export default class CatsCommand extends ChatCommand {
-	name = 'cats';
-	description = 'Get an image of our overlords';
+	constructor (options = {}) {
+		super(Object.assign({
+			name: 'cats',
+			alias: 'cat',
+			description: 'Get an image of our overlords'
+		}, options));
+	}
 
-	async run ({channel}) {
+	async exec ({channel}) {
 		const reddit = randomItem([
 			'cat',
 			'cats',
 			'whatswrongwithyourcat',
-			'catsareassholes'
+			'catsareassholes',
+			'catsridingroombas',
+			'CatTaps',
+			'CatSlaps',
+			'CatsISUOTTATFO'
+
+			// 'CatReactionGifs'
+			// 'CatsClimbingPeople',
+			// 'kittiesvsthings',
+			// 'ifitfits',
+			// 'Catfort',
 		]);
 		const img = await randomPuppy(reddit);
 
