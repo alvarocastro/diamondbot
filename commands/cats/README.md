@@ -17,7 +17,6 @@ npm install @diamondbot/cats-command
 ```
 
 ```js
-// index.js
 import { Bot } from '@diamondbot/core';
 import CatsCommand from '@diamondbot/cats-command';
 

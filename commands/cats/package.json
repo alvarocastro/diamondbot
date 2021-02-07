@@ -1,6 +1,6 @@
 {
   "name": "@diamondbot/cats-command",
-  "version": "2.2.0",
+  "version": "2.2.2",
   "description": "DiamondBot command to post random cats from reddit",
   "main": "dist/index.js",
   "files": [
