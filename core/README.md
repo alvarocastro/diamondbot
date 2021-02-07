@@ -1,12 +1,10 @@
-![Diamond Bot Logo](/logo.png)
-
-# Diamond Bot
+# Diamond Bot Core
 
 [![NPM](https://img.shields.io/npm/v/@diamondbot/core)](https://www.npmjs.com/package/@diamondbot/core)
 [![Maintainability status](https://img.shields.io/codeclimate/maintainability/alvarocastro/diamondbot)](https://codeclimate.com/github/alvarocastro/diamondbot/maintainability)
 [![Code style: XO](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/xojs/xo)
 
-Modular library to easily build powerful Discord bots.
+This is the starting point for creating awesome Discord bots.
 
 - [Install](#install)
 - [Usage](#usage)
