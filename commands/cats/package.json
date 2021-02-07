@@ -36,7 +36,7 @@
   },
   "homepage": "https://github.com/alvarocastro/diamondbot/commands/cats#readme",
   "dependencies": {
-    "@diamondbot/core": "0.0.2",
+    "@diamondbot/core": "^0.0.2",
     "random-item": "^3.1.0",
     "random-puppy": "^1.1.0"
   },
