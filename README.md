@@ -1,6 +1,6 @@
 # Diamond Bot
 
-[Diamond Bot Logo](/logo.png)
+[Diamond Bot Logo](logo.png)
 
 [![NPM](https://img.shields.io/npm/v/@diamondbot/core)](https://www.npmjs.com/package/@diamondbot/core)
 [![Maintainability status](https://img.shields.io/codeclimate/maintainability/alvarocastro/diamondbot)](https://codeclimate.com/github/alvarocastro/diamondbot/maintainability)
