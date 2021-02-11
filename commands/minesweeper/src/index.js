@@ -15,7 +15,7 @@ export default class MinesweeperCommand extends ChatCommand {
 		const levels = ['dumb', 'easy', 'normal', 'hard', 'extreme'];
 
 		if (!levels.includes(level)) {
-			channel.send('Possible difficulty levels are: `dumb`, `easy`, `normal`, `hard`, `extreme');
+			channel.send(`> Possible difficulty levels are: ${levels.map(l => `\`${l}\``).join(', ')}`);
 			return;
 		}
 

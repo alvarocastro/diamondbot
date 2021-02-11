@@ -1,5 +1,5 @@
 import { ChatCommand } from '@diamondbot/core';
-import randomPuppy from 'random-puppy';
+import redditSearch from 'reddit-random-image';
 import randomItem from 'random-item';
 
 export default class DogsCommand extends ChatCommand {
@@ -15,12 +15,15 @@ export default class DogsCommand extends ChatCommand {
 		const reddit = randomItem([
 			'Dogberg',
 			'WhatsWrongWithYourDog',
-			'dogswithjobs'
-
-			// 'blop',
-			// 'puppies',
+			'dogswithjobs',
+			'dogpictures',
+			'dogswearinghats',
+			'dogswitheyebrows',
+			'BeachDogs',
+			'blop',
+			'puppies'
 		]);
-		const img = await randomPuppy(reddit);
+		const img = await redditSearch(reddit);
 
 		await channel.send(img);
 	}

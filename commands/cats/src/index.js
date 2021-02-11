@@ -1,5 +1,5 @@
 import { ChatCommand } from '@diamondbot/core';
-import randomPuppy from 'random-puppy';
+import redditSearch from 'reddit-random-image';
 import randomItem from 'random-item';
 
 export default class CatsCommand extends ChatCommand {
@@ -20,15 +20,24 @@ export default class CatsCommand extends ChatCommand {
 			'catsridingroombas',
 			'CatTaps',
 			'CatSlaps',
-			'CatsISUOTTATFO'
-
-			// 'CatReactionGifs'
-			// 'CatsClimbingPeople',
-			// 'kittiesvsthings',
-			// 'ifitfits',
-			// 'Catfort',
+			'CatsISUOTTATFO',
+			'CatReactionGifs',
+			'CatsClimbingPeople',
+			'kittiesvsthings',
+			'ifitfits',
+			'Catfort',
+			'Catloaf',
+			'catsareliquid',
+			'PussyGifs',
+			'wet_pussy',
+			'smallpussy',
+			'KittenGifs',
+			'60fpscats',
+			'kittyhugs',
+			'purrkour',
+			'SneezingCats'
 		]);
-		const img = await randomPuppy(reddit);
+		const img = await redditSearch(reddit);
 
 		await channel.send(img);
 	}

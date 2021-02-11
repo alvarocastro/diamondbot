@@ -1,7 +1,7 @@
 {
-  "name": "@diamondbot/dogs-command",
-  "version": "1.1.1",
-  "description": "DiamondBot command that posts a random dog image from reddit",
+  "name": "@diamondbot/history-command",
+  "version": "1.0.0",
+  "description": "DiamondBot command that acts as \"today in history\" by telling important historical events that happened on a date",
   "main": "dist/index.js",
   "files": [
     "dist"
@@ -12,7 +12,8 @@
     "bump:major": "npm version major --no-git-tag-version",
     "postversion": "npm publish --access public",
     "prepare": "npm run build",
-    "build": "babel src -d dist"
+    "build": "babel src -d dist",
+    "build:watch": "babel src -d dist --watch"
   },
   "repository": {
     "type": "git",
@@ -22,20 +23,14 @@
     "diamondbot",
     "diamondbot command",
     "discord",
-    "command",
-    "dogs",
-    "doggies",
-    "doggy",
-    "reddit",
-    "random",
-    "image"
+    "command"
   ],
   "author": "Alvaro Castro",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/alvarocastro/diamondbot/issues"
   },
-  "homepage": "https://github.com/alvarocastro/diamondbot/commands/dogs#readme",
+  "homepage": "https://github.com/alvarocastro/diamondbot/commands/todayinhistory#readme",
   "devDependencies": {
     "@babel/cli": "^7.12.13",
     "@babel/core": "^7.12.13",
@@ -43,8 +38,9 @@
     "@babel/preset-env": "^7.12.13"
   },
   "dependencies": {
-    "@diamondbot/core": "0.1.2",
+    "@diamondbot/core": "^0.1.2",
+    "node-fetch": "^2.6.1",
     "random-item": "^3.1.0",
-    "reddit-random-image": "^1.0.2"
+    "volatile-map": "^1.0.0"
   }
 }
