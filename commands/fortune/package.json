@@ -12,7 +12,8 @@
     "bump:major": "npm version major --no-git-tag-version",
     "postversion": "npm publish --access public",
     "prepare": "npm run build",
-    "build": "babel src -d dist"
+    "build": "babel src -d dist",
+    "build:watch": "babel src -d dist --watch"
   },
   "repository": {
     "type": "git",
@@ -43,6 +44,8 @@
   },
   "dependencies": {
     "@diamondbot/core": "0.0.2",
-    "node-fetch": "^2.6.1"
+    "microsoft-capitalize": "^1.0.5",
+    "node-fetch": "^2.6.1",
+    "pick-random-weighted": "^1.2.3"
   }
 }
