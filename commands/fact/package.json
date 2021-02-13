@@ -1,7 +1,7 @@
 {
-  "name": "@diamondbot/history-command",
-  "version": "1.0.1",
-  "description": "DiamondBot command that acts as \"today in history\" by telling important historical events that happened on a date",
+  "name": "@diamondbot/fact-command",
+  "version": "1.0.0",
+  "description": "DiamondBot command that gets a random useless fact about something",
   "main": "dist/index.js",
   "files": [
     "dist"
@@ -24,17 +24,17 @@
     "diamondbot command",
     "discord",
     "command",
-    "history",
-    "date",
-    "today",
-    "todayinhistory"
+    "facts",
+    "fact",
+    "info",
+    "random"
   ],
   "author": "Alvaro Castro",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/alvarocastro/diamondbot/issues"
   },
-  "homepage": "https://github.com/alvarocastro/diamondbot/commands/todayinhistory#readme",
+  "homepage": "https://github.com/alvarocastro/diamondbot/commands/fact#readme",
   "devDependencies": {
     "@babel/cli": "^7.12.13",
     "@babel/core": "^7.12.13",
@@ -43,8 +43,6 @@
   },
   "dependencies": {
     "@diamondbot/core": "^0.1.2",
-    "node-fetch": "^2.6.1",
-    "random-item": "^3.1.0",
-    "volatile-map": "^1.0.0"
+    "node-fetch": "^2.6.1"
   }
 }

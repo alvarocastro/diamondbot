@@ -15,13 +15,17 @@ export default class DogsCommand extends ChatCommand {
 		const reddit = randomItem([
 			'Dogberg',
 			'WhatsWrongWithYourDog',
-			'dogswithjobs',
-			'dogpictures',
-			'dogswearinghats',
-			'dogswitheyebrows',
-			'BeachDogs',
-			'blop',
-			'puppies'
+			'HappyWoofGifs',
+			'doggifs',
+			'scripteddoggifs'
+
+			// 'dogswithjobs',
+			// 'dogpictures',
+			// 'dogswearinghats',
+			// 'dogswitheyebrows',
+			// 'BeachDogs',
+			// 'blop',
+			// 'puppies'
 		]);
 		const img = await redditSearch(reddit);
 

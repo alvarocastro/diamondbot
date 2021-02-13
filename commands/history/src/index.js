@@ -66,15 +66,20 @@ export default class HistoryCommand extends ChatCommand {
 		}
 
 		// Validate input
-		var lastDayOfMonth = new Date(year || now.getFullYear(), month, 0);
+		const lastDayOfMonth = new Date(year || now.getFullYear(), month, 0);
 		if (
+			args[0] === 'h' ||
+			args[0] === 'help' ||
 			args.length > 3 ||
 			(year && isNaN(year)) ||
 			isNaN(month) ||
 			isNaN(day) ||
 			day > lastDayOfMonth.getDate() ||
+			day <= 0 ||
 			month > 12 ||
-			year > now.getFullYear()
+			month <= 0 ||
+			year > now.getFullYear() ||
+			year <= 0
 		) {
 			return await this.commandHelp(channel);
 		}

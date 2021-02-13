@@ -40,7 +40,8 @@ const packagejson = {
 		'bump:major': 'npm version major --no-git-tag-version',
 		postversion: 'npm publish --access public',
 		prepare: 'npm run build',
-		build: 'babel src -d dist'
+		build: 'rm -rf dist;babel src -d dist',
+		'build:watch': 'babel src -d dist --watch'
 	},
 	repository: {
 		type: 'git',
