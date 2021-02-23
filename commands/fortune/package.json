@@ -1,6 +1,6 @@
 {
   "name": "@diamondbot/fortune-command",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "DiamondBot command that gives fortune cookie sayings",
   "main": "dist/index.js",
   "files": [

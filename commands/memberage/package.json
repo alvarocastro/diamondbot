@@ -1,7 +1,7 @@
 {
-  "name": "@diamondbot/porn-command",
+  "name": "@diamondbot/memberage-command",
   "version": "1.0.1",
-  "description": "DiamondBot command to search and post porn pics and gifs",
+  "description": "DiamondBot command to display the time a user been a member of the server",
   "main": "dist/index.js",
   "files": [
     "dist"
@@ -12,7 +12,8 @@
     "bump:major": "npm version major --no-git-tag-version",
     "postversion": "npm publish --access public",
     "prepare": "npm run build",
-    "build": "babel src -d dist"
+    "build": "rm -rf dist;babel src -d dist",
+    "build:watch": "babel src -d dist --watch"
   },
   "repository": {
     "type": "git",
@@ -23,29 +24,26 @@
     "diamondbot command",
     "discord",
     "command",
-    "porn",
-    "photos",
-    "gifs",
-    "search",
-    "nsfw"
+    "info",
+    "membership",
+    "time",
+    "util"
   ],
   "author": "Alvaro Castro",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/alvarocastro/diamondbot/issues"
   },
-  "homepage": "https://github.com/alvarocastro/diamondbot/commands/porn#readme",
+  "homepage": "https://github.com/alvarocastro/diamondbot/commands/memberage#readme",
   "devDependencies": {
-    "@babel/cli": "^7.12.13",
-    "@babel/core": "^7.12.13",
+    "@babel/cli": "^7.12.16",
+    "@babel/core": "^7.12.16",
     "@babel/plugin-proposal-class-properties": "^7.12.13",
-    "@babel/preset-env": "^7.12.13"
+    "@babel/preset-env": "^7.12.16"
   },
   "dependencies": {
-    "@diamondbot/core": "0.0.3",
-    "cheerio": "^1.0.0-rc.5",
-    "imgur-anonymous-uploader": "^1.1.0",
-    "node-fetch": "^2.6.1",
-    "random-item": "^3.1.0"
+    "@diamondbot/core": "^0.1.2",
+    "dayjs": "^1.10.4",
+    "dayjs-precise-range": "^1.0.1"
   }
 }

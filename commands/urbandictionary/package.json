@@ -1,7 +1,7 @@
 {
-  "name": "@diamondbot/porn-command",
-  "version": "1.0.1",
-  "description": "DiamondBot command to search and post porn pics and gifs",
+  "name": "@diamondbot/urban-command",
+  "version": "0.0.0",
+  "description": "DiamondBot command that looks up word definitions from Urban Dictionary",
   "main": "dist/index.js",
   "files": [
     "dist"
@@ -12,7 +12,8 @@
     "bump:major": "npm version major --no-git-tag-version",
     "postversion": "npm publish --access public",
     "prepare": "npm run build",
-    "build": "babel src -d dist"
+    "build": "babel src -d dist",
+    "build:watch": "babel src -d dist --watch"
   },
   "repository": {
     "type": "git",
@@ -23,18 +24,19 @@
     "diamondbot command",
     "discord",
     "command",
-    "porn",
-    "photos",
-    "gifs",
-    "search",
-    "nsfw"
+    "urban",
+    "dictionary",
+    "urbandictionary",
+    "definition",
+    "slang",
+    "random"
   ],
   "author": "Alvaro Castro",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/alvarocastro/diamondbot/issues"
   },
-  "homepage": "https://github.com/alvarocastro/diamondbot/commands/porn#readme",
+  "homepage": "https://github.com/alvarocastro/diamondbot/commands/urbandictionary#readme",
   "devDependencies": {
     "@babel/cli": "^7.12.13",
     "@babel/core": "^7.12.13",
@@ -42,10 +44,6 @@
     "@babel/preset-env": "^7.12.13"
   },
   "dependencies": {
-    "@diamondbot/core": "0.0.3",
-    "cheerio": "^1.0.0-rc.5",
-    "imgur-anonymous-uploader": "^1.1.0",
-    "node-fetch": "^2.6.1",
-    "random-item": "^3.1.0"
+    "@diamondbot/core": "^0.1.2"
   }
 }

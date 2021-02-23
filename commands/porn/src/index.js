@@ -118,7 +118,6 @@ export default class PornCommand extends ChatCommand {
 		const result = await this.imgur.uploadBuffer(buffer);
 
 		if (!result.success) {
-			channel.send(`No porn for you ${this.bot.emoji('KEKWait')}`);
 			throw new Error(JSON.stringify(result));
 		}
 
